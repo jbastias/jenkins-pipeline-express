@@ -20,6 +20,7 @@ node('master') {
         sh 'npm test'
     }
 
+/*
     stage('Publish') {
         echo 'Publishing Test Coverage...'
 		publishHTML (target: [
@@ -31,6 +32,8 @@ node('master') {
 			reportName: "Application Test Coverage"
 		])
     }
+*/
+
 }
 
 /*
@@ -76,4 +79,3 @@ node('staging') {
     }
 }
 */
-
